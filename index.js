@@ -6,7 +6,7 @@ const bot = new Composer();
 
 bot.on("message", (msg) => {
   console.log(msg);
-  msg.reply.text("Hello World");
+  msg.reply("Hello World");
 });
 
 module.exports = bot;
