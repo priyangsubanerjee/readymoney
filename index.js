@@ -6,7 +6,7 @@ const bot = new Composer();
 
 bot.on("message", (msg) => {
   console.log(msg);
-  bot.telegram.sendMessage(msg.chat.id, msg.message.text);
+  msg.reply.text("Hello World");
 });
 
 module.exports = bot;
